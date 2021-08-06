@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+#rightBlock .block h3:before,
+#rightBlock h2,
+#header {
+/*	background-color:#15614e;*/
+	background-color:#209276;
+}
+#rightBlock .block h4:before {
+    border-color:#209276;
+}
+
+#mainMenu {
+	background-color:#d5e6d1;
+}
+#rightBlock .block ul li:before {
+    border-color:#209276;
+}
+#rightBlock .block ol li li:before,
+#rightBlock .block ul li li:before {
+    border-color:#209276;
+}
+#rightBlock .block .topicsList > li:before,
+#rightBlock .block ol > li:before{
+  color:#209276;
+}
+#rightBlock .block table th {
+  background-color:#f2f8eb;
+}
+#rightBlock .block table tr.thead th,
+#rightBlock .block table th.thead,
+#rightBlock .block table thead th {
+  background-color:#cbe8d6;
+}
+#rightBlock .block table tfoot th {
+  background-color: #e8f8ec;
+}

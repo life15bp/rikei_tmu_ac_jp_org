@@ -1,0 +1,459 @@
+/*↓初期化 余白を無しに*/
+* { margin : 0 ; padding : 0 ; }
+
+html{ overflow-y:scroll; }
+
+p {margin-bottom: 1em; }
+
+body {
+      width : 100% ;
+      background-image: url(images/BG2.jpg) ; 
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+      }
+
+#my_body {
+           margin: 0 auto;
+           width : 900px ;
+           background-color: #ffffff;
+          }
+ 
+#my_header { 
+             margin : 0 auto ;
+             width : 100% ; 
+             height : 50px ; 
+             background: #133f8c url(images/bg_h2.gif) 0 0 repeat-x;
+             margin-bottom: 2px;
+             color: #ffffff;
+             }
+
+#my_header a {
+              text-decoration: none;
+              overflow:hidden;
+              outline:none;
+              }
+
+#my_header a:link{ color: #ffffff; }
+#my_header a:visited{ color: #ffffff; }
+#my_header a:hover{ color: #ffffff; }
+#my_header a:active{ color: #ffffff; }
+
+#my_footer {
+             margin : 0 auto ;
+             width : 100% ; 
+             height: 35px;
+             clear : both ; 
+             background: #133f8c url(images/bg_h2.gif) 0 0 repeat-x;
+             color: #ffffff;
+            }
+
+
+/*サイドメニューの設定 ここから*/
+#my_navigation { 
+                 float : left ;
+                 width : 185px ;
+                 margin: 0 5px 2px 0 ;
+                 background:#d9d9d9
+                }
+
+#my_navigation h2 {
+                   margin:0 0 2px 0;
+                   font-size:14px;
+                   color:#ffffff;
+                   line-height:2.5em;
+                   text-align:center;
+                   background:#133f8c url(images/bg_h2.gif) 0 0 repeat-x;
+                   }
+
+#my_navigation h3 {
+                   margin:0;
+                   font-size:14px;
+                   color:#ffffff;
+                   line-height:2em;
+                   text-align:center;
+                   background:#133f8c url(images/bg_h2.gif) 0 0 repeat-x;
+                   border-bottom: solid #adadad 1px;
+                   }
+
+#my_navigation h4 {
+                   margin:0 0 2px 0;
+                   font-size:12px;
+                   color:#ffffff;
+                   line-height:2em;
+                   text-align:center;
+                   background:#133f8c url(images/bg_h2.gif) 0 0 repeat-x;
+                   border-bottom: solid #aaaaaa 1px;
+                   }
+
+#my_navigation ul {
+                   margin:0;
+                   padding:0;
+                   list-style-type:none;
+                   }
+
+#my_navigation li {
+                   margin:0;
+                   padding:0;
+                   font-size:12px;
+                   color:#333333;
+                   background:#efefef;
+                   
+                   }
+
+#my_navigation li.navi {
+                        margin:0;
+                        padding:0;
+                        font-size:12px;
+                        color:#333333;
+                        border-bottom:1px solid #adadad;
+                        background:#efefef url(images/bg_list.gif) 8px 13px no-repeat;
+                        
+                        }
+
+
+
+
+#my_navigation li a.navi {
+                          display:block;
+                          padding:10px 0 10px 20px;
+                          color:#133f8c;
+                          text-decoration: none;
+                          }
+
+
+
+#my_navigation li a.current {
+                             background:#fafafa ;
+                             background-image: linear-gradient(#6699ff,#99ccff) ;
+                             display:block;
+                             padding:10px 0 10px 20px;
+                             color:#133f8c;
+                             text-decoration: none
+                             }
+
+#my_navigation li a:hover {
+                           background:#fafafa;
+                           background-image: linear-gradient(#6699ff,#99ccff);
+                           }
+
+#my_navigation a {
+                  overflow:hidden;
+                  outline:none;
+                  }
+/*サイドメニューの設定 ここまで*/
+
+
+#my_contents { 
+               float : left ; 
+               width : 690px ; 
+               background-color: #ffffff;
+               padding: 10px;
+               text-align: justify;
+               text-justify: inter-ideograph;
+               font-size:90%;  /*←本文中の文字サイズ*/
+               line-height: auto;  /*←本文中の行高さ*/
+               letter-spacing: 0.05em;  /*←本文中の文字の間隔*/
+               border-top:1px dashed #355fac;
+               border-bottom:1px dashed #355fac;
+               margin-bottom: 2px;
+               }
+
+
+div.border {
+             background-color: #000000;
+             width: 100% ;
+             height: 2px;
+             }
+
+/*画像の枠の設定*/
+img.waku {
+             border: 1px #aaaaaa solid;
+             vertical-align: middle;
+            }
+
+div.img {
+         text-align: center;
+         margin: 1em 0;
+         }
+
+div.img p {font-size: 80%;}
+
+div.explain {float: left;
+             width: 350px;
+             margin: 0px 10px;
+             border: #ff0000 solid 2px;
+             padding: 5px;
+             }
+
+/*↓添付カードの画像に使用*/
+div.float {
+           float: left;
+           text-align: center;
+           }
+
+div.clear {clear: both; }
+
+h2.header { 
+           line-height: 50px;
+           margin-left: 20px;
+           }
+
+h3.footer { 
+           line-height: 35px;
+           margin-left: 10px;
+           }
+
+
+/*↓topページの設定 ここから*/
+
+/*↓topページ 四角の中の設定用*/
+.comb {
+       margin:0px 10px 10px 10px;
+       padding:5px 10px 15px 10px;
+       border-left: #83AAF2 1px solid;
+       border-right: #83AAF2 1px solid;
+       border-bottom: #83AAF2 1px solid;
+       height: 50px;
+       letter-spacing: 4px;
+       font-size: 12px;
+       line-height: 1.3em;
+       }
+
+/*↓topページ タイトル部分の設定 (マウスオーバー無しのとき)*/
+h4.top {
+        color:#ffffff;
+        font-size:14px;
+        margin:10px 10px 0px 10px;
+        padding:2px 12px;
+        background: #133f8c url(images/bg_h2.gif) 0 0 repeat-x;
+        height: 20px;
+        line-height: 20px;
+        }
+
+h4.top a {
+      text-decoration: none;
+      overflow:hidden;
+      outline:none;
+      display: block;
+      color: #ffffff;
+      }
+
+/*↓topページ タイトル部分の設定 (マウスオーバーのとき)*/
+h4.top:hover {
+          background:#fafafa url(images/bg_h4.gif) 0 0 repeat-x;
+          }
+
+
+
+
+table.3box {
+            width: 690px;
+            }
+
+table.2box {
+            width: 460px;
+            }
+
+table.1box {
+            width: 230px;
+            }
+
+td.top {
+        width: 227px;
+        }
+
+/*↓topページの区切りの点線で使用*/
+hr.divider{
+           border: none;
+           height: 1px;
+           margin: 10px 0px;
+           border-top: dashed 1px #355fac;
+           }
+
+/*↓topページの区切りの点線の下の微妙なスペースに使用*/
+h2.title {
+          margin: 20px 0 0 0;
+          }
+/*↑topページの設定 ここまで*/
+
+ol {
+    margin-left: 1.5em;
+    }
+
+ol li {
+       margin-bottom: 0.2em;
+       }
+
+ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+    }
+
+ul li {
+       margin-bottom: 0.2em;
+       }
+
+
+/*↓ラベル発注のページで使用 ここから*/
+td.label {
+           text-align: center;
+           vertical-align: middle;
+           font-size: 80%;
+           }
+
+#label table {
+              margin: 0px 50px;
+              
+              }
+/*↑ラベル発注のページで使用 ここまで*/
+
+/*↓消防法のページで使用 ここから*/
+table.shoubou {
+               font-size: 80%;
+               text-align: justify;
+               margin-bottom: 2em;
+               }
+
+
+th.a1 { width: 60px; text-align: center;}
+th.a2 { width: 100px; text-align: center;}
+th.a3 { width: 300px; text-align: center;}
+th.a4 { width: 120px; text-align: center;}
+th.a5 { width: 100px; text-align: center; }
+
+td.a1 { width: 60px; text-align: center; padding: 5px;}
+td.a2 { width: 100px; text-align: center; padding: 5px;}
+td.a3 { width: 300px; padding: 5px;}
+td.a4 { width: 120px; padding: 2px 5px;}
+td.a5 { width: 100px; text-align: center; padding: 2px 5p;}
+
+td.slash {
+          background-image: linear-gradient(to top right, transparent, transparent 48%, black 48%, black 52%, transparent 52%, transparent); /*←混載禁止表の斜め線で使用*/
+          }
+
+/*↑指定数量のページで使用 ここまで*/
+
+/*↓廃液分類表の設定 ここから*/
+
+table.bunrui  {
+               font-size: 80%;
+               background-color: #fafafa;
+               }
+
+
+th.b1 { width: 15px; text-align: center;}
+th.b2 { width: 30px; text-align: center;}
+th.b3 { width: 150px; text-align: center;}
+th.b4 { width: 70px; text-align: center;}
+th.b5 { width: 400px; text-align: center;}
+
+td.b1 { width: 15px; padding: 5px 5px 5px 5px;}
+td.b2 { width: 30px; text-align: center; padding: 5px 5px 5px 5px;}
+td.b3 { width: 150px; padding: 5px 5px 5px 5px;}
+td.b4 { width: 70px; padding: 5px 5px 5px 5px;}
+td.b4_red { background-color: #ff4444; ;width: 70px; padding: 5px 5px 5px 5px;}
+td.b4_pink { background-color: #ffaaaa; ;width: 70px; padding: 5px 5px 5px 5px;}
+td.b4_yellow { background-color: #ffff00; ;width: 70px; padding: 5px 5px 5px 5px;}
+td.b4_orange { background-color: #ff8000; ;width: 70px; padding: 5px 5px 5px 5px;}
+td.b4_blue { background-color: #44ffff; ;width: 70px; padding: 5px 5px 5px 5px;}
+td.b4_green { background-color: #44ff44; ;width: 70px; padding: 5px 5px 5px 5px;}
+td.b5 { width: 400px; padding: 5px 5px 5px 5px;}
+/*↑廃液分類表の設定 ここまで*/
+
+
+/*↓感染性廃棄物の分類表の設定 ここから*/
+th.c1 { width: 100px; text-align: center;}
+th.c2 { width: 300px; text-align: center;}
+th.c3 { width: 250px; text-align: center;}
+
+td.c1 { width: 50px; text-align: center;}
+td.c2 { width: 200px; padding: 5px;}
+td.c3 { width: 200px; padding: 5px;}
+td.c4 { width: 200px; padding: 5px;}
+/*上感染性廃棄物の分類表の設定 ここまで*/
+
+
+/*↓排水基準のページで使用 ここから*/
+table.haisui {
+               width: 660px;
+               font-size: 100%;
+               text-align: left;
+               }
+
+table.haisui2 {
+               width: 660px;
+               font-size: 100%;
+               text-align: left;
+               }
+
+
+th.d1 { width: 30%; text-align: center; padding: 2px; }
+th.d2 { width: 20%; text-align: center; padding: 2px; }
+th.d3 { width: 50%; text-align: center; padding: 2px; }
+th.d4 { width: 25%; text-align: center; padding: 2px; }
+
+
+td.d1 { padding: 2px 4px;}
+td.d2 { width: 100px; text-align: center; padding: 10px 5px 10px 5px;}
+td.d3 { width: 300px; padding: 10px 5px 10px 5px;}
+td.d4 { width: 100px; padding: 5px 5px 5px 5px;}
+td.d5 { width: 100px; text-align: center; padding: 5px 5px 5px 5px;}
+/*↑排水基準のページで使用 ここまで*/
+
+/*↓法令のページで使用 ここから*/
+.list-box {
+           display: table;
+           margin-bottom: 1.5em;
+           border-collapse: separate;
+           border-spacing: 2px 0;
+           }
+.list-text1 {
+             display: table-cell;
+             width: 150px;
+             text-align: center;
+             vertical-align: middle;
+             font-weight: bold;
+             }
+.list-text2 { display: table-cell; }
+
+/*↑法令のページで使用 ここまで*/
+
+
+
+/*赤文字で強調*/
+.attention { color: red; }
+
+/*太字で強調*/
+.note { font-weight: bold;}
+
+/*角を丸くする設定*/
+div.kadomaru {
+              -moz-border-radius: 20px;    /* 古いFirefox用 */
+              -webkit-border-radius: 20px; /* 古いSafari,Chrome用 */
+              border-radius: 20px;         /* CSS3 */
+              
+              border: 2px #55aaff solid;     /* 枠線の装飾 */
+              }
+              
+/*角丸の中の文字位置の設定*/
+p.kadomaru {
+            padding: 10px 0px 0px 15px;
+            margin: 0;
+            font-size: 1.1em;
+            }
+
+/*角丸の中のリスト位置の設定*/
+div.kadomaru li { margin: 0px 5px 5px 20px; }
+
+a.linkcolor { color: #FF0000;}
+
+ul.shoshiki {
+             list-style-type:none;
+             margin: 0;
+             padding: 0;
+             background: #fafafa;
+             }
+li.shoshiki {
+             background: url(images/bg_list.gif) 5px 9px no-repeat;
+             padding: 4px 0 4px 17px;
+             }
+

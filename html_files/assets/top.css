@@ -1,0 +1,869 @@
+﻿@charset "utf-8";
+*{
+	height:auto;
+}
+a {
+	text-decoration:none;
+	color:#005d8d;
+}
+a.hover,
+a:hover {
+	color:royalblue;
+	text-decoration:underline;
+}
+body, html {
+	height: 100%;
+}
+html {
+	font-size: 10px;
+	min-width: 960px;
+	box-sizing: border-box;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic Medium", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+	font-size: 1.6em;
+	color: #111;
+}
+body.IEx {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "メイリオ", Meiryo, sans-serif;
+}
+#fullheightcontainer {
+	box-sizing: border-box;
+	width:100%;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	background-color: #f2f2f2;
+	margin-bottom: -30px;
+}
+#main {
+	box-sizing: border-box;
+	max-width:1500px;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0 1% 30px;
+	overflow:hidden;
+}
+body.top #main {
+	padding-top:20px;
+}
+#header {
+	height: 194px;
+	width: 100%;
+	background-color: #64497f;
+}
+body.top #header{
+
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABcBAMAAAC2HHmQAAAAMFBMVEXy8vLMzMzx8fHg4ODq6uru7u7w8PDr6+vt7e3X19fd3d3l5eXa2tro6Ojv7+/j4+PdksxBAAAAKklEQVR4XmMQxAIHB1ACwjSGdwyhDB0M5QwuDHcZdjP8ZzBmWMVwhmEmANvtCLT96YA/AAAAAElFTkSuQmCC);
+	background-repeat:repeat-x;
+	background-position:left -10px;
+	border-top: 10px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#headerA {
+	width:100%;
+	max-width:1500px;
+	margin:0 auto;
+	height:84px;
+	overflow:hidden;
+	background-image: url('h1_bg_lv2.png');
+	background-position: 480px -10px;
+	background-repeat: no-repeat;
+}
+body.top #headerA {
+	height:82px;
+	background-image: url('h1_bg.png');
+	background-position: 480px -10px;
+}
+#headerA h1 a{
+	margin-top: 8px;
+	text-decoration: none !important;
+	color: #fff !important;
+	display: inline-block;
+	white-space: nowrap;
+}
+body.top #headerA h1 a{
+	color: #666 !important;
+}
+#headerA h1 a img.cmark{
+	width:245px;
+	height:63px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+#headerA h1 a span.name{
+	display:inline-block;
+	vertical-align:top;
+	font-size:40px;
+	font-weight:500;
+	line-height:1;
+	padding-top:12px;
+	margin-left:53px;
+}
+#headerB {
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+	padding-top: 26px;
+	border-top:8px solid #999;
+	background-color:white;
+}
+body.top #headerB {
+	border-top:none;
+	height: 102px;
+}
+.ctgmenu {
+	width:100%;
+	margin:0 auto 8px;
+	border-spacing:0;
+	max-width: 1500px;
+}
+
+.ctgmenu td{
+	text-align:center;
+	width: 20%;
+	padding:0;
+}
+#headerB > .ctgmenu td{
+	padding:0 .5%;
+}
+.ctgmenu a.bottun {
+	position:relative;
+	width:auto;
+	height:50px;
+	overflow:hidden;
+	margin:0 2px 10px;
+	background-color:#f2f2f2;
+	-moz-box-shadow: 1px 1px 2px 0px #000000;
+	-webkit-box-shadow: 1px 1px 2px 0px #000000;
+	box-shadow: 1px 1px 2px 0px #000000;
+	background-color:#ededed;
+	-webkit-border-top-left-radius:15px;
+	-moz-border-radius-topleft:15px;
+	border-top-left-radius:15px;
+	-webkit-border-top-right-radius:15px;
+	-moz-border-radius-topright:15px;
+	border-top-right-radius:15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright:15px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:15px;
+	-moz-border-radius-bottomleft:15px;
+	border-bottom-left-radius:15px;
+	text-indent:0px;
+	border:none;
+	display:block;
+	color:#fff;
+	font-size:21px;
+	line-height:52px;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 1px #000000;
+}
+#headerB > .ctgmenu a.bottun {
+	margin:0 3px;
+}
+.ctgmenu a.bottun:before {
+	position:absolute;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	padding: 0 4px 0 0;
+	border: none;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	color: rgba(255,255,255,0.9);
+	text-align: right;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: -webkit-radial-gradient(25% 25%, circle farthest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%);
+	background: -moz-radial-gradient(25% 25%, circle farthest-corner, rgba(0,0,0,0) 0, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%);
+	background: radial-gradient(circle farthest-corner at 25% 25%, rgba(0,0,0,0) 0, rgba(0,0,0,1) 82%, rgba(0,0,0,1) 100%);
+	background-position: 50% 50%;
+	-webkit-background-origin: padding-box;
+	background-origin: padding-box;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	-webkit-background-size: auto auto;
+	background-size: auto auto;
+	-webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+	content: "\ea1c";
+	font-family: 'tmurikei' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+    position: absolute;
+    font-size: 12px;
+    line-height: 22px;
+    right: 5%;
+    top: 15px;
+}
+.ctgmenu a:hover,
+.ctgmenu a.hover {
+	opacity:.7;
+}
+.ctgmenu a.jimutop {
+	background-color:#666666;
+	display:block;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+
+}
+.ctgmenu a.rigaku {
+	background-color: #64497f;
+	display: block;
+}
+.ctgmenu a.ues{
+/*	background-color:#38604f; */
+	background-color:#209276;
+	display: block;
+}
+.ctgmenu a.syomu {
+	background-color:#51588e;
+	display: block;
+}
+.ctgmenu a.shisetsu {
+	background-color:#5483c7;
+	display: block;
+}
+
+#breadcramb {
+    margin-left: 260px;
+}
+#breadcramb ul {
+	list-style-type:none;
+	overflow:hidden;
+	height:36px;
+}
+#breadcramb ul li{
+	float:left;
+	white-space:nowrap;
+	padding-right:4px;
+	font-size:12px;
+	line-height:36px;
+}
+#breadcramb ul li:nth-of-type(n+2):before {
+	content:">";
+	padding-right:4px;
+}
+
+#footer {
+	clear:both;
+	height: 30px;
+	padding-top: 9px;
+	line-height: 1;
+	text-align: center;
+	background-color: #ccc;
+	font-size: 12px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#leftBlock {
+	width: 242px;
+	height:auto;
+	float: left;
+	overflow: hidden;
+	z-index:10;
+	clear:both;
+}
+body.top #leftBlock {
+	width:302px;
+}
+
+#appMenu{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-bottom:45px;
+}
+
+#appMenu .box {
+	width:100%;
+	height:50px;
+	margin-bottom:12px;
+}
+#appMenu .box > a {
+	position: relative;
+	display: block;
+	width: 300px;
+	height: 50px;
+	line-height:50px;
+	background-color:#c2cbd3;
+	color:black;
+	z-index:11;
+	-moz-box-shadow: 2px 2px 0px 0px #000000;
+	-webkit-box-shadow: 2px 2px 0px 0px #000000;
+	box-shadow:   2px 2px 0px 0px #000000;
+}
+#appMenu .box > a:hover,
+#appMenu .box > a.hover,
+#appMenu .box > a.acitve {
+	opacity:.7;
+	text-decoration:none;
+}
+#appMenu .box > a.active {
+	opacity:1;
+	color:white;
+	background-color:#1b1464;
+}
+#appMenu .box > a:before {
+	font-family: 'tmurikei' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:#1b1464;
+	font-size:26px;
+	height: 50px;
+	line-height:50px;
+	margin-left:20px;
+}
+#appMenu .box > a.tile:before {
+  content: "\e900";
+}
+#appMenu .box > a.note:before {
+  content: "\e901";
+}
+#appMenu .box > a.telephone:before {
+  content: "\e902";
+}
+#appMenu .box > a > span[class^="icon-"] {
+	display:none;
+}
+#appMenu .title {
+	display:block;
+	font-size:19px;
+	font-weight:500;
+	position:absolute;
+	left:65px;
+	top:0;
+	bottom:0;
+	right:auto;
+	z-index:12;
+}
+#appMenu .title > span[class^="icon-"]{
+	margin-left:.25em;
+}
+#appMenu .date {
+	display:block;
+	font-size:11px;
+	font-weight:400;
+	text-align:right;
+	position:absolute;
+	top:0;
+	right:20px;
+	bottom:0;
+	left:auto;
+	z-index:12;
+}
+
+#linklist{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-bottom:45px;
+	border:1px solid #808080;
+	overflow:hidden;
+	background-color:white;
+}
+
+#linklist > .title {
+	background-color:#808080;
+	color:white;
+	font-size:19px;
+	font-weight:500;
+	height:34px;
+	line-height:34px;
+	overflow:hidden;
+	padding-left:1.25em;
+}
+
+#linklist > .list {
+	overflow:hidden;
+	height:auto;
+	padding:.75em .5em .75em 2em;
+}
+#linklist > .list > li {
+	height:auto;
+	margin-bottom:.25em;
+	line-height:1.6;
+}
+#linklist > .list > li:last-child {
+	margin-bottom:0;
+}
+
+#mainMenu {
+	background-color:#ded6e8;
+	margin-bottom:24px;
+	padding:16px 16px 16px 8px;
+}
+#mainMenu > ul {
+	list-style-type: none;
+	padding-left:20px;
+}
+#mainMenu > ul ul {
+	padding-left:20px;
+	list-style-type: none;
+	margin-top:8px;
+}
+#mainMenu > ul ul ul{
+	margin-top:0;
+}
+#mainMenu > ul > li:before,
+#mainMenu > ul > li > ul > li:before {
+	content: "\ea1c";
+	font-family: 'tmurikei' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align:middle;
+	padding-right:4px;
+	color:#333;
+	font-size:14px;
+	margin-left: -20px;
+}
+#mainMenu > ul > li > ul > li li:before {
+	content:"└";
+	vertical-align:middle;
+	padding-right:4px;
+	color:#333;
+	margin-left: -24px;
+}
+#mainMenu > ul > li,
+#mainMenu > ul > li > ul > li {
+	margin-bottom:8px;
+}
+#mainMenu ul li {
+	line-height:1.4;
+}
+#mainMenu ul li a{
+	vertical-align:middle;
+}
+
+#rightBlock {
+	margin-left:260px;
+	z-index:1;
+	height:auto;
+}
+body.top #rightBlock {
+	margin-left:320px;
+}
+#rightBlock h2 {
+	color:white;
+	font-weight:normal;
+	text-shadow: 1px 1px 1px #000000;
+	font-size:17px;
+	background-color:#6c4883;
+	height:34px;
+	width:100%;
+	line-height:34px;
+	padding-left:1em;
+	margin-bottom:10px;
+}
+body.top #rightBlock h2 {
+	background-color:#1d1360;
+}
+#rightBlock .block {
+	background-color:white;
+	border:1px solid #ccc;
+	padding:1em 18px;
+	width:100%;
+	height:auto;
+	min-height:10px;
+	overflow:hidden;
+	margin-bottom:30px;
+	line-height:1.6;
+}
+
+#rightBlock .block *:first-child{
+	margin-top:0 !important;
+}
+#rightBlock .block *:last-child{
+	margin-bottom:0 !important;
+}
+
+#rightBlock .topicsList {
+	width:auto;
+	list-style-type:none;
+	padding-left:0 !important;
+}
+#rightBlock .topicsList + .moreInfo {
+	margin-top:1.5em;
+	text-align:center;
+}
+#rightBlock .topicsList + .moreInfo > span {
+	font-size:14px;
+	display:inline-block;
+	text-align: center;
+	margin:0 auto;
+	padding:.5em 4em;
+	background-color:#666666;
+	color:white;
+}
+#rightBlock .topicsList + .moreInfo > span.hover {
+	cursor:pointer;
+	opacity:.7;
+}
+#rightBlock .topicsList > li {
+	position:relative !important;
+	margin-bottom:.5em !important;
+    padding-left: 0;
+}
+body.top #rightBlock .topicsList > li {
+	padding-left:66px;
+}
+body.top #rightBlock .topicsList > li:last-child {
+	margin-bottom:0;
+}
+#rightBlock .block .topicsList > li:before {
+	content: "\ea1c";
+	font-family: 'tmurikei' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align:middle;
+	padding-right:4px;
+	color:gray;
+	font-size:14px;
+	margin-left: 0;
+	border:none;
+	position:static;
+}
+
+body.top #rightBlock .topicsList > li:before {
+	position:absolute;
+	top:2px;
+	left:0;
+	display:inline-block;
+    width:44px;
+    height:22px;
+    line-height:22px;
+    font-size:16px;
+    text-align:center;
+    background-color: gray;
+    color:white;
+    content:'他';
+    border-radius: 0;
+    border: none;
+    margin-left:0;
+}
+body.top #rightBlock .topicsList > li.rigaku:before {
+    content:'理';
+    background-color: #6c4883;
+}
+body.top #rightBlock .topicsList > li.toshi:before {
+    content:'都';
+    background-color: #209276;
+}
+body.top #rightBlock .topicsList > li.syomu:before {
+    content:'庶';
+    background-color: #4a5992;
+}
+body.top #rightBlock .topicsList > li.shisetsu:before {
+    content:'施';
+    background-color: #2286cc;
+}
+
+/* right content box */
+
+#rightBlock .block hr{
+	border:none;
+	border-top:1px solid #b3b3b3;
+	margin:1em -18px;
+	height:1px;
+}
+
+#rightBlock .block h3{
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    padding-left: 30px;
+    margin:2em 0 1em;
+}
+#rightBlock .block h3::first-of-type{
+	margin-top:1em;
+}
+
+#rightBlock .block h3:before {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #1d1360;
+    content: " ";
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+#rightBlock .block h4{
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 24px;
+    margin:1em 0;
+    font-weight:bold;
+}
+#rightBlock .block h4:before {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border:4px solid #1d1360;
+    content: " ";
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+#rightBlock .block h5{
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+    margin:1em 0 .5em .25em;
+    font-weight:bold;
+}
+#rightBlock .block h5:before {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #808080;
+    content: " ";
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+#rightBlock .block h6{
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 24px;
+    margin:1em 0;
+    font-weight:bold;
+}
+#rightBlock .block h6:before {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border:3px solid #808080;
+    content: " ";
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+#rightBlock .block hr + h3,
+#rightBlock .block hr + h4,
+#rightBlock .block hr + h5,
+#rightBlock .block hr + h6 {
+	margin-top:1em;
+}
+
+#rightBlock .block p {
+	margin:.5em 0;
+	text-indent:1em;
+}
+
+#rightBlock .block p:first-child {
+	margin-top:.75em;
+}
+    
+#rightBlock .block ul,
+#rightBlock .block ol {
+	padding-left:2.1em;
+	margin-bottom:.75em;
+}
+
+#rightBlock .block ul li,
+#rightBlock .block ol li {
+	position: relative;
+	margin-bottom:.1em;
+}
+#rightBlock .block ul li:before {
+  content:"";
+  position:absolute;
+  top: .35em;
+  left: -1.1em;
+  width: 14px;
+  height: 14px;
+  border:2px solid #1d1360;
+  border-radius: 100%;
+}
+#rightBlock .block ul li.asterisk:before {
+  content:"※";
+  border:none; 
+  top:0;
+  left:-1em;
+  height:auto;
+  width:auto;
+  color: black !important;
+}
+#rightBlock .block ul li.mymark{
+  text-indent:-1.2em;
+}
+#rightBlock .block ul li.mymark:first-letter{
+  margin-right:.2em;
+}
+#rightBlock .block ul li.mymark:before {
+  content:"";
+  display:none;
+}
+#rightBlock .block ol li li:before,
+#rightBlock .block ul li li:before {
+  width: 10px;
+  height: 10px;
+  border:2px solid #1d1360;
+  top: .5em;
+  left: -1.25em;
+}
+#rightBlock .block ol > li {
+  list-style-position:outside;
+  counter-increment: cnt;
+	position: relative;
+}
+#rightBlock .block ol > li:before{
+  position:absolute;
+  left:-1.8em;
+  top:0;
+  content: "(" counter(cnt) ") ";
+  color:#1d1360;
+  font-weight:600;
+}
+
+#rightBlock .block table {
+  width: 100%;
+  margin: 1.5em auto;
+  font-size: 1.6rem;
+  border-collapse:collapse;
+}
+#rightBlock .block table td,
+#rightBlock .block table th {
+  padding: .5em .75em;
+  line-height: 1.4;
+  font-weight: normal;
+  border: 1px solid #999;
+  background-color:#fcfcfc;
+}
+#rightBlock .block table td p,
+#rightBlock .block table th p{
+  line-height:1.6;
+	text-indent:0;
+}
+#rightBlock .block table td.hidden,
+#rightBlock .block table th.hidden {
+  background-color:transparent;
+  border:none;
+}
+
+#rightBlock .block table th {
+  font-weight: normal;
+  text-shadow:0px 0px 1px #666;
+  background-color:#e9eaef;
+  text-align:left;
+}
+#rightBlock .block table thead td,
+#rightBlock .block table thead th {
+  background-color: #e1e2e8;
+  color: #333;
+  font-weight: normal;
+  text-shadow:0px 0px 1px #666;
+
+}
+#rightBlock .block table tr.thead th,
+#rightBlock .block table th.thead,
+#rightBlock .block table thead th {
+  background-color:#c1c4d2;
+}
+#rightBlock .block table thead td:empty {
+	border:none;
+	background-color:transparent;
+}
+#rightBlock .block table tfoot td,
+#rightBlock .block table tfoot th {
+  background-color: #e6e6e6;
+  font-weight: normal;
+  text-shadow:0px 0px 1px #666;
+
+}
+#rightBlock .block table tfoot th {
+  background-color: #dbdde5;
+}
+#rightBlock .block table.hidden{
+  width:auto;
+  margin:1.5em auto 1.5em 0;
+}
+#rightBlock .block table.hidden,
+#rightBlock .block table.hidden td,
+#rightBlock .block table.hidden th {
+  border:none !important;;
+  background-color:transparent !important;
+  padding:.25em 1em .25em 0;
+}
+#rightBlock .block blockquote {
+  color:#333;
+  line-height:1.6;
+  font-weight:bold;
+  padding:1em 1.5em;
+  border:1px solid #999;
+  background-color:#f2f2f2;
+  margin:1.5em auto;
+  text-align:left;
+}
+/* for Expression Web 4 Menu */
+.rigaku{}
+.toshi{}
+.syomu{}
+.shisetsu{}
+.hidden{}
+.asterisk{}
+.mymark{}
+.topicsList{}
+.thead{}
+.cell-borderTop-hide{border-top:none;}
+.cell-borderRight-hide{border-right:none;}
+.cell-borderBottom-hide{border-bottom:none;}
+.cell-borderLeft-hide{border-left:none;}
+.center {text-align: center !important;}
+.right {text-align: right !important;}
+.top {vertical-align:top !important;}
+.red {color:red !important;}
+.blue{color:blue !important;}
+.nowrap{white-space:nowrap !important;}
